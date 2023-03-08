@@ -1,0 +1,36 @@
+! RHF DIIS UNO
+! TightSCF PModel DLPNO-CCSD(T)
+! NormalPNO Extrapolate(3,cc)
+
+%mdci
+     Singles true  
+     Denmat none
+     Triples 1
+     TrafoType trafo_full
+     LocNAttempts 8
+     UseFullLMP2Guess true
+     SinglesFockUsePNOs true
+     KCOpt KC_MO
+end
+%scf
+     Maxiter 450
+     CNVShift true
+     CNVSOSCF true
+     AutoTRAHIter 100
+     SCFMode Direct
+end
+%basis
+     AuxJ "AutoAux"
+     AuxC "cc-pVQZ/C"
+     AutoAuxSize 2
+end
+
+%MaxCore 12000                                          
+%pal nprocs 8                                               
+           end 
+
+* xyz 0 1
+6        0.000000000      0.000000000      0.878234000
+6        0.000000000      0.628728000     -0.439117000
+6        0.000000000     -0.628728000     -0.439117000
+*
