@@ -1,0 +1,12 @@
+%mem=14Gb
+%nprocs=8
+# PBE1PBE/def2svp opt(maxcycles=200) iop(1/152=200) scfcyc=200
+
+kick structure # 0
+
+0 1
+6     1.2695    0.0823    0.6372
+6     1.4893    1.3650   -0.7589
+6    -0.2159    0.8472   -0.4749
+
+
